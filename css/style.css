@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+#cabecalho{
+    background-color: #18c499;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    text-align: center;
+}
+
+
+.logo{
+    width: 250px;
+    height: auto;
+    position: relative;
+    object-position: center;
+    top: -70px;
+}
+
+#form{
+    position: relative;
+    left: 900px;
+    background-color: rgb(60, 192, 126);
+    top:160px;
+    height: 640px;
+    width: 330px;
+    
+}
+
+#form1{
+    padding:25px;
+    padding-top: 60px;
+    color: white;
+    font-size:medium;
+}
+
+#title1{
+    font-weight: 500;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 20px;
+    left: 6px;
+}
+
+#apresentacao{
+    position: relative;
+    top: -620px;
+    left: 170px;
+    font-size: 20px;
+    height: 800px;
+    width: 570px;
+  }
+  
+#title2{
+    font-weight: 600;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 60px;
+    left:80px;
+    font-family: quicksand;
+}
+
+#title3{
+  font-weight: 800;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-family: quicksand; 
+}
+
+#geral{
+  background-color: #18c499;
+}
+
+#sobre{
+  padding-top: 200px;
+  font-family: quicksand;
+}
+
+.titlelista{
+  font-weight:bolder;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  position:relative;
+  font-family: quicksand;
+}
+
+.desclista{
+  font-weight: 500;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-family: quicksand;
+}
+
+.youtube{
+  position: relative;
+  top: 85px;
+  left: 105px;
+  object-position: center;
+}
+
+.textbar{
+  padding-right: 70px;
+  padding-top:5px;
+  padding-bottom: 5px;
+}
+
+.btn {
+    border: none;
+    font-family: 'Lato';
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 5px 73px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  /* Pseudo elements for icons */
+  .btn:before {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Icon separator */
+.btn-sep {
+    padding: 15px;
+  }
+  
+  .btn-sep:before {
+    background: rgba(0,0,0,0.15);
+  }
+
+  /* Button 1 */
+.btn-1 {
+    background: #3498db;
+    color: #fff;
+  }
+  
+  .btn-1:hover {
+    background: #2980b9;
+  }
+  
+  .btn-1:active {
+    background: #2980b9;
+    top: 2px;
+  }
+  
+  .btn-1:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+  }
+  
+  

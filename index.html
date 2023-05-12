@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css">
+<body>
+    <div id="cabecalho"><img class="logo" src="terceiraimg.png"></div>
+    <div id="geral">
+        <div id="form">
+            <div id="form1">
+                <form action="form.php" method="post">
+                    <label for="title" id="title1">Receba novidades de camisas no seu email</label>
+                    <br><br>
+                    <label for="nome">Nome:</label>
+                    <br>
+                    <input type="text" name="nome" class="textbar">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" name="email" class="textbar">
+                    <br><br>
+                    <label>Você possui uma coleção de camisas do vasco?</label>
+                    <br>
+                    <div>
+                    <input type="checkbox" id="op1" name="checkbox">
+                    <label for="checkbox">Sim</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="op2" name="checkbox">
+                        <label for="checkbox">Não</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="op3" name="checkbox">
+                        <label for="checkbox">Possuo algumas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="op4" name="checkbox">
+                        <label for="checkbox">Estou começando</label>
+                    </div>
+                    <br>
+                    <label for="quantidade">Quantas camisas você possui?</label><br>
+                    <select name="select">
+                        <option value="valor0" selected>Nenhuma</option>
+                        <option value="valor1">1</option>
+                        <option value="valor2">2</option>
+                        <option value="valor3">3</option>
+                        <option value="valor4">4</option>
+                        <option value="valor5">5 ou mais</option>
+                    </select>
+                    <br><br>
+                    <label for="time">Qual seu time do coração?</label><br>
+                    <input type="text" name="time" class="textbar">
+                    <br><br>
+                    <button class="btn btn-1 btn-sep icon-info" href="#">Receber Novidades</button>
+                </form>
+            </div>
+        </div>
+        <div id="apresentacao">
+            <label for="title2" id="title2">Venda e exposição de camisas retrôs do Vasco</label>
+            <!-- <img src="a1.png" id="camisas"> -->
+            <iframe class="youtube" width="500" height="300" src="https://www.youtube.com/embed/RTM6Z2M2LXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div id="sobre">
+                <label for="title3" id="title3">Sobre a RetroVasco</label><br><br><br>
+                <ul>
+                    <li class="titlelista">O site com a maior variedade de camisas retrô do Vasco!</li>
+                    <label class="desclista">Compre camisas antigas do Vasco sem sair de casa.</label><br><br>
+                    <li class="titlelista">Venda sua coleção de camisas com segurança, tranquilidade e privacidade</li>
+                    <label class="desclista">Anuncie suas camisas no nosso site e tenha 100% de privacidade enquanto vende.</label><br><br>
+                    <li class="titlelista">Pesquise o modelo que você deseja ou encontre de acordo com seus gostos!</li>
+                    <label class="desclista">Você pode pesquisar diretamente um modelo específico de camisa ou procurar dentre nossos produtos alguma que te satisfaça.</label><br>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
