@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,9 @@
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/style.css">
+<script src="js/jquery-3.7.0.js"></script>
+<script src="js/main.js" defer></script>
+
 <body>
     <div id="cabecalho"><img class="logo" src="terceiraimg.png"></div>
     <div id="geral">
@@ -31,8 +35,8 @@
                     <label>Você possui uma coleção de camisas do vasco?</label>
                     <br>
                     <div>
-                    <input type="checkbox" id="op1" name="checkbox">
-                    <label for="checkbox">Sim</label>
+                        <input type="checkbox" id="op1" name="checkbox">
+                        <label for="checkbox">Sim</label>
                     </div>
                     <div>
                         <input type="checkbox" id="op2" name="checkbox">
@@ -67,20 +71,25 @@
         <div id="apresentacao">
             <label for="title2" id="title2">Venda e exposição de camisas retrôs do Vasco</label>
             <!-- <img src="a1.png" id="camisas"> -->
-            <iframe class="youtube" width="500" height="300" src="https://www.youtube.com/embed/RTM6Z2M2LXw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe class="youtube" width="500" height="300" src="https://www.youtube.com/embed/RTM6Z2M2LXw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
             <div id="sobre">
                 <label for="title3" id="title3">Sobre a RetroVasco</label><br><br><br>
                 <ul>
                     <li class="titlelista">O site com a maior variedade de camisas retrô do Vasco!</li>
                     <label class="desclista">Compre camisas antigas do Vasco sem sair de casa.</label><br><br>
                     <li class="titlelista">Venda sua coleção de camisas com segurança, tranquilidade e privacidade</li>
-                    <label class="desclista">Anuncie suas camisas no nosso site e tenha 100% de privacidade enquanto vende.</label><br><br>
+                    <label class="desclista">Anuncie suas camisas no nosso site e tenha 100% de privacidade enquanto
+                        vende.</label><br><br>
                     <li class="titlelista">Receba uma camisa retrô podendo ser AUTOGRAFADA todo mês!</li>
-                    <label class="desclista">Você pode assinar pacote que te permitem receber camisas retrôs e autografadas todos os meses em sua casa!</label><br>
+                    <label class="desclista">Você pode assinar pacote que te permitem receber camisas retrôs e
+                        autografadas todos os meses em sua casa!</label><br>
                 </ul>
             </div>
         </div>
-        <hr>    
+        <hr>
         <div class="container">
             <div class="card">
                 <div class="card-title">
@@ -133,7 +142,75 @@
                     <button><a href="#">Assine agora</a></button>
                 </div>
             </div>
-        </div>     
+        </div>
+    </div>
+    <hr>
+    <div class="accordion">
+        <h1>Perguntas Frequentes</h1>
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                O que é a RetroVasco?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    A RetroVasco é um site de compra e venda de camisas retrôs do Vasco que garante total segurança e privacidade
+                    ao comprar e vender camisas. A RetroVasco também promove leilões de camisas históricas, assim como planos
+                    de assinatura que permitem receber camisas retrôs e autografadas todo mês.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                Como funciona os planos de assinatura?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    Você pode ter o plano Grátis(Grátis) que tem direito apenas a anunciar no site e receber novidades de novas
+                    camisas. Você pode também assinar o plano Básico($99/mês) que te permite todas essas funcionalidades e também
+                    permite receber uma camisa retrô por mês, assim como permite participar de leilões das camisas raras. Por
+                    fim, você pode assinar o plano Premium($299/mês) que te permite todas as funcionalidades do plano Básico e 
+                    também permite receber uma camisa retrô autografada por mês, assim como ter preferência na compra de camisas
+                    em leilões.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                Como funciona os leilões?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    Nós anunciamos uma camisa que seja muito rara para nossos assinadores Básico e Premium, e eles podem dar lances
+                    para comprar a camisa. O assinador que der o maior lance, leva a camisa. O assinador Premium tem preferência
+                    na compra da camisa, ou seja, se ele der o maior lance, ele leva a camisa, mesmo que o assinador Básico tenha
+                    dado um lance igual ou maior.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                O que é uma camisa retrô?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    Camisas retrô são camisas que já foram usadas por jogadores do Vasco em anos passados, podendo ser autografadas,
+                    ou camisas de edições passadas no modelo torcedor.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-item-header">
+                Como funciona a garantia de privacidade do site?
+            </div>
+            <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                    Caso você queira comprar ou vender alguma camisa de modo totalmente anônimo, você deve entrar em contato com o
+                    nosso suporte, que vai te auxiliar a como fazer isso. Nós garantimos que ninguém vai saber que você comprou ou
+                    vendeu alguma camisa, a não ser que você queira (e lembre-se, jamais iremos pedir seus dados de login).
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
