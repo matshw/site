@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 
 *{
@@ -524,5 +525,96 @@ h1 {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     padding: 0 1em;
+  }
+}
+
+footer{
+  background-color: #415aca;
+  padding-left: 50px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.container-footer{
+  padding-left: 250px;
+  max-width: 1400px;
+  margin: auto;
+}
+.row-footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col{
+  width: 30%;
+  padding: 0 20px;
+}
+.footer-col h4{
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family: EB Garamond;
+  position: relative;
+  text-transform: uppercase;
+}
+.footer-col ul{
+  font-family: EB Garamond;
+  list-style: none;
+}
+.footer-col ul li{
+  margin: 10px 0;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  font-family: EB Garamond;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: #cecdcd;
+  padding-left: 10px;
+}
+
+/* .footer-col .midias-sociais a:hover{
+  color: #415aca;
+  background-color: white;
+}
+.footer-col .midias-sociais{
+  margin-top: 30px;
+}
+.footer-col .midias-sociais a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+}
+.footer-col .midias-sociais a i{
+  font-size: 20px;
+}
+
+.footer-col .midias-sociais a:hover{
+  color: #415aca;
+  background-color: white;
+} */
+/* Responsivo */
+@media (max-width: 800px) {
+  .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+}
+@media (max-width:600px) {
+  .footer-col{
+      width: 100%;
   }
 }
