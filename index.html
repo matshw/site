@@ -9,14 +9,14 @@
 </head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" type="image/png" href="https://vasco.com.br/wp-content/uploads/2020/10/ESCUDO-VASCO-RGB-1-450x450.png"/>
+<link rel="icon" type="image/png"
+    href="https://vasco.com.br/wp-content/uploads/2020/10/ESCUDO-VASCO-RGB-1-450x450.png" />
 <link rel="stylesheet" href="css/style.css">
-<script src="js/jquery-3.7.0.js"></script>
 <script src="js/main.js" defer></script>
 
 <body>
@@ -25,7 +25,7 @@
         <div id="form">
             <div id="form1">
                 <form action="form.php" method="post">
-                    <label for="title" id="title1">Receba novidades de camisas no seu email</label>
+                    <label for="tituloform" id="tituloform">Receba novidades de camisas no seu email</label>
                     <br><br>
                     <label for="nome">Nome:</label>
                     <br>
@@ -67,19 +67,18 @@
                     <label for="time">Qual seu time do coração?</label><br>
                     <input type="text" name="time" class="textbar">
                     <br><br>
-                    <button class="btn btn-1 btn-sep icon-info" href="#">Receber Novidades</button>
+                    <button class="botaoform" href="#">Receber Novidades</button>
                 </form>
             </div>
         </div>
         <div id="apresentacao">
-            <label for="title2" id="title2">Venda e exposição de camisas retrôs do Vasco</label>
-            <!-- <img src="a1.png" id="camisas"> -->
+            <label for="tituloprincipal" id="tituloprincipal">Venda e exposição de camisas retrôs do Vasco</label>
             <iframe class="youtube" width="500" height="300" src="https://www.youtube.com/embed/RTM6Z2M2LXw"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <div id="sobre">
-                <label for="title3" id="title3">Sobre a RetroVasco</label><br><br><br>
+            <div id="descricao">
+                <label for="titulodescricao" id="titulodescricao">Sobre a RetroVasco</label><br><br><br>
                 <ul>
                     <li class="titlelista">O site com a maior variedade de camisas retrô do Vasco!</li>
                     <label class="desclista">Compre camisas antigas do Vasco sem sair de casa.</label><br><br>
@@ -96,13 +95,13 @@
         <div class="divh1">
             <h1>Nossos Preços</h1>
         </div>
-        <div class="container">
-            <div class="card">
-                <div class="card-title">
+        <div class="precos">
+            <div class="preco">
+                <div class="titulopreco">
                     <h2>Grátis</h2>
                     <p><i class="fa fa-usd"></i><Span>0</Span>/mês</p>
                 </div>
-                <div class="card-content">
+                <div class="descpreco">
                     <ul>
                         <li><i class="fa fa-check-circle"></i>Anunciar no site</li>
                         <li><i class="fa fa-check-circle"></i>Receber novidades de camisas</li>
@@ -114,12 +113,12 @@
                     <button><a href="#">Assine agora</a></button>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-title">
+            <div class="preco">
+                <div class="titulopreco">
                     <h2>Básico</h2>
                     <p><i class="fa fa-usd"></i><Span>99</Span>/mês</p>
                 </div>
-                <div class="card-content">
+                <div class="descpreco">
                     <ul>
                         <li><i class="fa fa-check-circle"></i>Anunciar no site</li>
                         <li><i class="fa fa-check-circle"></i>Receber novidades de camisas</li>
@@ -131,12 +130,12 @@
                     <button><a href="#">Assine agora</a></button>
                 </div>
             </div>
-            <div class="card">
-                <div class="card-title">
+            <div class="preco">
+                <div class="titulopreco">
                     <h2>Premium</h2>
                     <p><i class="fa fa-usd"></i><Span>299</Span>/mês</p>
                 </div>
-                <div class="card-content">
+                <div class="descpreco">
                     <ul>
                         <li><i class="fa fa-check-circle"></i>Anunciar no site</li>
                         <li><i class="fa fa-check-circle"></i>Receber novidades de camisas</li>
@@ -156,7 +155,7 @@
             <h1>Perguntas Frequentes</h1>
         </div>
         <div class="accordion-item">
-            <div class="accordion-item-header">
+            <div class="accordion-titulo">
                 O que é a RetroVasco?
             </div>
             <div class="accordion-item-body">
@@ -170,7 +169,7 @@
             </div>
         </div>
         <div class="accordion-item">
-            <div class="accordion-item-header">
+            <div class="accordion-titulo">
                 Como funciona os planos de assinatura?
             </div>
             <div class="accordion-item-body">
@@ -190,62 +189,60 @@
             </div>
         </div>
         <div class="accordion-item">
-            <div class="accordion-item-header">
+            <div class="accordion-titulo">
                 Como funciona os leilões?
             </div>
             <div class="accordion-item-body">
                 <div class="accordion-item-body-content">
                     Nós anunciamos uma camisa que seja muito rara para nossos assinadores Básico e Premium, e eles podem
-                    dar lances
-                    para comprar a camisa. O assinador que der o maior lance, leva a camisa. O assinador Premium tem
-                    preferência
-                    na compra da camisa, ou seja, se ele der o maior lance, ele leva a camisa, mesmo que o assinador
-                    Básico tenha
-                    dado um lance igual ou maior.
+                    dar lances para comprar a camisa. O assinador que der o maior lance, leva a camisa. O assinador
+                    Premium
+                    tem preferência na compra da camisa, ou seja, se ele der o maior lance, ele leva a camisa, mesmo que
+                    o
+                    assinador Básico tenha dado um lance igual.
                 </div>
             </div>
         </div>
         <div class="accordion-item">
-            <div class="accordion-item-header">
+            <div class="accordion-titulo">
                 O que é uma camisa retrô?
             </div>
             <div class="accordion-item-body">
                 <div class="accordion-item-body-content">
                     Camisas retrô são camisas que já foram usadas por jogadores do Vasco em anos passados, podendo ser
-                    autografadas,
-                    ou camisas de edições passadas no modelo torcedor.
+                    autografadas, ou camisas de edições passadas no modelo torcedor.
                 </div>
             </div>
         </div>
         <div class="accordion-item">
-            <div class="accordion-item-header">
+            <div class="accordion-titulo">
                 Como funciona a garantia de privacidade do site?
             </div>
             <div class="accordion-item-body">
                 <div class="accordion-item-body-content">
                     Caso você queira comprar ou vender alguma camisa de modo totalmente anônimo, você deve entrar em
-                    contato com o
-                    nosso suporte, que vai te auxiliar a como fazer isso. Nós garantimos que ninguém vai saber que você
-                    comprou ou
-                    vendeu alguma camisa, a não ser que você queira (e lembre-se, jamais iremos pedir seus dados de
-                    login).
+                    contato com o nosso suporte, que vai te auxiliar a como fazer isso. Nós garantimos que ninguém vai
+                    saber que você comprou ou vendeu alguma camisa, a não ser que você queira
+                    (e lembre-se, jamais iremos pedir seus dados de login).
                 </div>
             </div>
         </div>
     </div>
     <hr>
-    <div class="divh1"><h1>O que estão falando da RetroVasco?</h1></div>
-    <div class="wrapper">
-        <div class="box">
+    <div class="divh1">
+        <h1>O que estão falando da RetroVasco?</h1>
+    </div>
+    <div class="avaliacoes">
+        <div class="avaliacao">
             <i class="fas fa-quote-left quote"></i>
             <p>O site é muito intuitivo e fácil de usar, me ajudou muito a aumentar minha coleção do Vasco. Mal
                 posso esperar para comprar o serviço de assinatura e receber uma camisa retrô todo mês!
             </p>
-            <div class="content">
+            <div class="discurso">
                 <div class="info">
-                    <div class="name">Bebeto</div>
-                    <div class="job">Torcedor do Vasco</div>
-                    <div class="stars">
+                    <div class="nome">Bebeto</div>
+                    <div class="profissao">Torcedor do Vasco</div>
+                    <div class="estrelas">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -258,16 +255,17 @@
                 </div>
             </div>
         </div>
-        <div class="box">
+        <div class="avaliacao">
             <i class="fas fa-quote-left quote"></i>
             <p>Já comprei camisas retrôs em vários sites diferentes, porém esse foi o que me ofereceu o melhor serviço
-                e garantiu a segurança dos meus dados, além de me entregar uma camisa retrô autografada todo mês. Recomendo!
+                e garantiu a segurança dos meus dados, além de me entregar uma camisa retrô autografada todo mês.
+                Recomendo!
             </p>
-            <div class="content">
+            <div class="discurso">
                 <div class="info">
-                    <div class="name">Edmundo</div>
-                    <div class="job">Colecionador Profissional</div>
-                    <div class="stars">
+                    <div class="nome">Edmundo</div>
+                    <div class="profissao">Colecionador Profissional</div>
+                    <div class="estrelas">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -280,16 +278,16 @@
                 </div>
             </div>
         </div>
-        <div class="box">
+        <div class="avaliacao">
             <i class="fas fa-quote-left  quote"></i>
-            <p>Comecei colecionar camisas a pouco tempo e tenho certeza que esse é o melhor site  de camisas que já vi.
+            <p>Comecei colecionar camisas a pouco tempo e tenho certeza que esse é o melhor site de camisas que já vi.
                 Os leilões realmente são muito bons e com ótimos produtos. Recomendo para todos os colecionadores!
             </p>
-            <div class="content">
+            <div class="discurso">
                 <div class="info">
-                    <div class="name">Romário</div>
-                    <div class="job">Colecionador iniciante</div>
-                    <div class="stars">
+                    <div class="nome">Romário</div>
+                    <div class="profissao">Colecionador iniciante</div>
+                    <div class="estrelas">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -304,88 +302,86 @@
         </div>
     </div>
     <hr>
-    <div class="divh1"><h1>Equipe de Desenvolvimento</h1></div>
+    <div class="divh1">
+        <h1>Equipe de Desenvolvimento</h1>
+    </div>
     <section>
-        <div class="row">
-          <!-- Column 1-->
-          <div class="column">
-            <div class="card">
-              <div class="img-container">
-                <img src="dinamite.jpeg" />
-              </div>
-              <h3>Dinamite</h3>
-              <p>Desenvolvedor</p>
-              <div class="icons">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#">
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </div>
+        <div class="equipe">
+            <div class="column">
+                <div class="bloco">
+                    <div class="img-container">
+                        <img src="dinamite.jpeg" />
+                    </div>
+                    <h3>Dinamite</h3>
+                    <p>Desenvolvedor</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- Column 2-->
-          <div class="column">
-            <div class="card">
-              <div class="img-container">
-                <img src="juninho.jpg" />
-              </div>
-              <h3>Juninho</h3>
-              <p>Designer</p>
-              <div class="icons">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#">
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </div>
+            <div class="column">
+                <div class="bloco">
+                    <div class="img-container">
+                        <img src="juninho.jpg" />
+                    </div>
+                    <h3>Juninho</h3>
+                    <p>Designer</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-          <!-- Column 3-->
-          <div class="column">
-            <div class="card">
-              <div class="img-container">
-                <img src="pec.jpeg" />
-              </div>
-              <h3>Gabriel Pec</h3>
-              <p>Designer</p>
-              <div class="icons">
-                <a href="#">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="#">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="#">
-                  <i class="fas fa-envelope"></i>
-                </a>
-              </div>
+            <div class="column">
+                <div class="bloco">
+                    <div class="img-container">
+                        <img src="pec.jpeg" />
+                    </div>
+                    <h3>Gabriel Pec</h3>
+                    <p>Designer</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
-      <footer>
-        <div class="container-footer">
-            <div class="row-footer">
-                <!-- footer col-->
-                <div class="footer-col">
+    </section>
+    <footer>
+        <div class="rodape">
+            <div class="linha-rodape">
+                <div class="coluna-rodape">
                     <h4>SobreVasco</h4>
                     <ul>
                         <li><a href="#"> Quem somos </a></li>
@@ -394,9 +390,7 @@
                         <li><a href=""> Serviço de Assinatura</a></li>
                     </ul>
                 </div>
-                <!--end footer col-->
-                <!-- footer col-->
-                <div class="footer-col">
+                <div class="coluna-rodape">
                     <h4>Obter ajuda</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
@@ -406,7 +400,7 @@
                         <li><a href="#">Opções De Pagamento</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="coluna-rodape">
                     <h4>Nossa loja</h4>
                     <ul>
                         <li><a href="#">Camisas</a></li>
@@ -415,15 +409,6 @@
                         <li><a href="#">Assinaturas</a></li>
                     </ul>
                 </div>
-                <!-- <div class="footer-col">
-                    <div class="midias-sociais">
-                        <a href="#"> <i class="fa fa-facebook"></i> </a>
-                        <a href="#"> <i class="fa fa-instagram"></i> </a>
-                        <a href="#"> <i class="fa fa-twitter"></i> </a>
-                        <a href="#"> <i class="fa fa-linkedin"></i> </a>
-                    </div>
-                </div> -->
-                <!--end footer col-->
             </div>
         </div>
     </footer>
