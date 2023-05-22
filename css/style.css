@@ -311,7 +311,7 @@ h1 {
   font-family: EB Garamond;
 }
 
-.accordion {
+.faq {
   width: 100%;
   max-width: 1000px;
   margin: 2rem auto;
@@ -326,7 +326,7 @@ h1 {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
-.accordion-item-header {
+.accordion-titulo {
   padding: 0.5rem 3rem 0.5rem 1rem;
   min-height: 3.5rem;
   line-height: 1.25rem;
@@ -337,24 +337,24 @@ h1 {
   cursor: pointer;
 }
 
-.accordion-item-header::after {
+.accordion-titulo::after {
   content: "\002B";
   font-size: 2rem;
   position: absolute;
   right: 1rem;
 }
 
-.accordion-item-header.active::after {
+.accordion-titulo.active::after {
   content: "\2212";
 }
 
-.accordion-item-descricao {
+.accordion-descricao {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
 
-.accordion-item-conteudo {
+.accordion-conteudo {
   padding: 1rem;
   line-height: 1.5rem;
   border-top: 1px solid;
@@ -479,7 +479,7 @@ h1 {
   background-color: #ffffff;
 }
 
-.bloco .img-container {
+.bloco .imagem-equipe {
   width: 8em;
   height: 8em;
   background-color: #17a2b8;
@@ -524,7 +524,7 @@ h1 {
   color: #ffffff;
 }
 
-.bloco:hover .img-container {
+.bloco:hover .imagem-equipe {
   transform: scale(1.1);
 }
 

@@ -1,23 +1,20 @@
-const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+const accordionTitulos = document.querySelectorAll(".accordion-titulo");
 
-accordionItemHeaders.forEach(accordionItemHeader => {
-  accordionItemHeader.addEventListener("click", event => {
-    
-    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-    
-    const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
-    if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
-      currentlyActiveAccordionItemHeader.classList.toggle("active");
-      currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+accordionTitulos.forEach(accordionTitulo => {
+  accordionTitulo.addEventListener("click", event => {
+    const AccordionTituloAtivo = document.querySelector(".accordion-titulo.active");
+    if(AccordionTituloAtivo && AccordionTituloAtivo!==accordionTitulo) {
+      AccordionTituloAtivo.classList.toggle("active");
+      AccordionTituloAtivo.nextElementSibling.style.maxHeight = 0;
     }
 
-    accordionItemHeader.classList.toggle("active");
-    const accordionItemBody = accordionItemHeader.nextElementSibling;
-    if(accordionItemHeader.classList.contains("active")) {
-      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    accordionTitulo.classList.toggle("active");
+    const accordionConteudo = accordionTitulo.nextElementSibling;
+    if(accordionTitulo.classList.contains("active")) {
+      accordionConteudo.style.maxHeight = accordionConteudo.scrollHeight + "px";
     }
     else {
-      accordionItemBody.style.maxHeight = 0;
+      accordionConteudo.style.maxHeight = 0;
     }
     
   });
