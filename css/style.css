@@ -362,12 +362,6 @@ h1 {
   background-color: #79aec8;
 }
 
-@media(max-width:767px) {
-  html {
-    font-size: 14px;
-  }
-}
-
 ::selection {
   background: rgba(23, 162, 184, 0.3);
 }
@@ -444,19 +438,6 @@ h1 {
   border-color: #fff;
 }
 
-@media (max-width: 1045px) {
-  .avaliacoes .avaliacao {
-    width: calc(50% - 10px);
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 702px) {
-  .avaliacoes .avaliacao {
-    width: 100%;
-  }
-}
-
 .equipe {
   display: flex;
   flex-wrap: wrap;
@@ -528,28 +509,6 @@ h1 {
   transform: scale(1.1);
 }
 
-@media screen and (min-width: 768px) {
-  section {
-    padding: 1em 7em;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  section {
-    padding: 1em;
-  }
-
-  .bloco {
-    padding: 2em 1em;
-  }
-
-  .column {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 0 1em;
-  }
-}
-
 footer {
   background-color: #415aca;
   padding-left: 50px;
@@ -606,17 +565,4 @@ footer {
 .coluna-rodape ul li a:hover {
   color: #cecdcd;
   padding-left: 10px;
-}
-
-@media (max-width: 800px) {
-  .footer-col {
-    width: 50%;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width:600px) {
-  .footer-col {
-    width: 100%;
-  }
 }
