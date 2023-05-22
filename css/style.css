@@ -44,7 +44,7 @@ body {
   top: 160px;
   height: 600px;
   width: 330px;
-
+  cursor:default;
 }
 
 #form1 {
@@ -65,7 +65,8 @@ body {
   position: absolute;
   top: 20px;
   left: 6px;
-  font-family: "quicksand";
+  font-family:'quicksand';
+  
 }
 
 #apresentacao {
@@ -85,7 +86,7 @@ body {
   position: relative;
   top: 60px;
   left: 80px;
-  font-family: quicksand;
+  font-family: 'quicksand';
 }
 
 #titulodescricao {
@@ -93,12 +94,12 @@ body {
   font-size: 25px;
   color: rgb(227, 227, 227);
   position: relative;
-  font-family: quicksand;
+  font-family: 'quicksand';
 }
 
 #descricao {
   padding-top: 200px;
-  font-family: quicksand;
+  font-family: 'quicksand';
 }
 
 .titlelista {
@@ -106,7 +107,7 @@ body {
   font-size: 20px;
   color: rgb(227, 227, 227);
   position: relative;
-  font-family: quicksand;
+  font-family: 'quicksand';
 }
 
 .desclista {
@@ -114,7 +115,7 @@ body {
   font-size: 18px;
   color: rgb(227, 227, 227);
   position: relative;
-  font-family: quicksand;
+  font-family: 'quicksand';
 }
 
 .youtube {
@@ -440,18 +441,20 @@ h1 {
 
 .equipe {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:nowrap;
   padding: 2em 1em;
   text-align: center;
 }
 
 .coluna {
-  width: 100%;
-  padding: 0.5em 0;
+  width: 25%;
+  padding-left: 180px;
 }
 
 .bloco {
-  width: 400px;
+  padding-top: 20px;
+  height: 320px;
+  width: 280px;
   box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
   border-radius: 0.6em;
   color: #1f003b;
