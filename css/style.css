@@ -448,7 +448,8 @@ h1 {
 
 .coluna {
   width: 25%;
-  padding-left: 180px;
+  position: relative;
+  left: 180px;
 }
 
 .bloco {
