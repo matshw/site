@@ -1,20 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="escudo.png"/>
-    <script src="js/main.js" defer></script>
+    <link rel="icon" type="image/png" href="escudo.png" />
+    <script src="js/camisas.js" defer></script>
+    <link rel="stylesheet" href="css/styleinicial.css">
     <title>RetroVasco</title>
 </head>
+
 <body>
-    <div id="cabecalho">
+    <!-- <div id="cabecalho">
         <a href="paginainicial.html"><img src="terceiraimg.png" class="logo"></a>
         <a href="paginainicial.html" id="inicio">Início</a>
         <a href="index.html" id="sobre">Sobre</a>
+    </div> -->
+    <!-- modelos de pizza na lista e no carrinho -->
+    <div class="camisas">
+
+        <div class="camisas-item">
+            <a href="">
+                <div class="camisas-item-img"><img src="" /></div>
+                <div class="camisas-item-add">+</div>
+            </a>
+            <div class="camisas-item-preco">R$ --</div>
+            <div class="camisas-item-nome">--</div>
+            <div class="camisas-item-descricao">--</div>
+        </div>
+
+        <div class="tela-compra">
+            <img src="" />
+            <div class="tela-compra-nome">--</div>
+            <div class="tela-compra-qtarea">
+                <button class="tela-compra-diminuir">-</button>
+                <div class="tela-compra-quantidade">1</div>
+                <button class="tela-compra-aumentar">+</button>
+            </div>
+        </div>
+
     </div>
 
+    <header>
+        <h1>RetroVasco</h1>
+        <div class="abrir-menu"><span>0</span>🛒</div>
+    </header>
+
+    <main>
+
+        <h2>Camisas</h2>
+
+        <div class="camisas-area"></div>
+    </main>
+
+    <aside>
+        <div class="menu-area">
+            <div class="fechar-menu">❌</div>
+            <h1>Suas Pizzas</h1>
+            <div class="menu"></div>
+            <div class="menu-detalhes">
+                <div class="menu-itens subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="menu-itens desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="menu-itens total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="menu-finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+
+    <div class="janelaCamisas">
+        <div class="janelaBody">
+            <div class="camisaInfo-cancelarmobile">Voltar</div>
+            <div class="camisaBig">
+                <img src="" />
+            </div>
+            <div class="camisaInfo">
+                <h1>--</h1>
+                <div class="camisaInfo-descricao">--</div>
+                <div class="camisaInfo-tamanhoArea">
+                    <div class="camisaInfo-setor">Tamanho</div>
+                    <div class="camisaInfo-tamanhos">
+                        <div data-key="0" class="camisaInfo-tamanho">P <span>--</span></div>
+                        <div data-key="1" class="camisaInfo-tamanho">M <span>--</span></div>
+                        <div data-key="2" class="camisaInfo-tamanho selected">G <span>--</span></div>
+                        <div data-key="3" class="camisaInfo-tamanho ">GG <span>--</span></div>
+                    </div>
+                </div>
+                <div class="camisaInfo-precoArea">
+                    <div class="camisaInfo-setor">Preço</div>
+                    <div class="camisaInfo-preco">
+                        <div class="camisaInfo-precoAtual">R$ --</div>
+                        <div class="camisaInfo-areaQuantidade">
+                            <button class="camisaInfo-diminuir">-</button>
+                            <div class="camisaInfo-quantidade">1</div>
+                            <button class="camisaInfo-aumentar">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="camisaInfo-botaoAdicionar">Adicionar ao carrinho</div>
+                <div class="camisaInfo-botaoCancelar">Cancelar</div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
