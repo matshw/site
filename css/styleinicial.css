@@ -449,7 +449,7 @@ h1, h2 {
         display:block;
     }
 
-    .pizzaWindowArea {
+    .janelaCamisas {
         justify-content:flex-start;
         align-items: flex-start;
     }
@@ -468,7 +468,7 @@ h1, h2 {
         height: auto;
     }
 
-    .pizzaInfo h1 {
+    .camisaInfo h1 {
         margin-top:20px;
     }
 
