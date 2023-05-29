@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
 #cabecalho {
     background-color: #449ca8;
     height: 60px;
@@ -15,7 +24,6 @@
 
   body {
     background-color: #449ca8;
-    /* color: #fff; */
   }
   
   .logo {
@@ -47,17 +55,6 @@
     font-size: 15px;
     text-decoration: none;
   }
-
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
-
-*{
-  font-family: 'Poppins', sans-serif;
-  margin:0; padding:0;
-  box-sizing: border-box;
-  outline: none; border:none;
-  text-transform: capitalize;
-  transition: all .2s linear;
-}
 
 .telaPagamento{
   display: flex;
