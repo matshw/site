@@ -31,7 +31,7 @@ body {
 .abrir-menu {
     width: 71px;
     height: auto;
-    margin-top: -55px;
+    margin-top: -50px;
     margin-left: 95%;
     font-size: 26px;
     background-color: #9ad1ef;
@@ -41,8 +41,8 @@ body {
 }
 
 #imginicial{
-    right: 750px;
-    width: auto;
+    right: 755px;
+    width: 175px;
     height: auto;
     position: relative;
     object-position: center;
