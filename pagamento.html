@@ -1,13 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="escudo.png" />
+    <link rel="stylesheet" href="css/stylepagamento.css">
     <title>Pagamento</title>
 </head>
+
 <body>
-    
+    <header>
+        <div id="cabecalho">
+            <a href="paginainicial.html"><img src="images/terceiraimg.png" class="logo"></a>
+            <a href="paginainicial.html" id="inicio">Início</a>
+            <a href="index.html" id="sobre">Sobre</a>
+        </div>
+    </header>
+
+
+    <div class="telaPagamento">
+
+        <form action="">
+
+            <div class="linha">
+
+                <div class="coluna">
+
+                    <h3 class="titulo">Endereço de Cobrança</h3>
+
+                    <div class="caixaTexto">
+                        <span>Nome:</span>
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="caixaTexto">
+                        <span>Email:</span>
+                        <input type="email" placeholder="example@example.com" required>
+                    </div>
+                    <div class="caixaTexto">
+                        <span>Endereço:</span>
+                        <input type="text" placeholder=" CEP - Rua" required>
+                    </div>
+                    <div class="caixaTexto">
+                        <span>Cidade:</span>
+                        <input type="text" placeholder="Sua Cidade" required>
+                    </div>
+
+                    <div class="linhas">
+                        <div class="caixaTexto">
+                            <span>Estado:</span>
+                            <input type="text" placeholder="Seu Estado" required>
+                        </div>
+                        <div class="caixaTexto">
+                            <span>CEP:</span>
+                            <input type="text" placeholder="xxxxx-xxx" required pattern="\d{5}-\d{3}">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="coluna">
+
+                    <h3 class="titulo">Pagamento</h3>
+
+                    <div class="caixaTexto">
+                        <span>Cartões aceitos:</span>
+                        <img src="images/card_img.png" alt="" required>
+                    </div>
+                    <div class="caixaTexto">
+                        <span>Nome no cartão:</span>
+                        <input type="text" placeholder="Nome" required>
+                    </div>
+                    <div class="caixaTexto">
+                        <span>Número do cartão:</span>
+                        <input type="number" placeholder="1111-2222-3333-4444" required>
+                    </div>
+                    <div class="caixaTexto">
+                        <span>Mês de vencimento:</span>
+                        <input type="text" placeholder="Mês" required>
+                    </div>
+
+                    <div class="linhas">
+                        <div class="caixaTexto">
+                            <span>Ano de vencimento:</span>
+                            <input type="number" placeholder="2022" required>
+                        </div>
+                        <div class="caixaTexto">
+                            <span>CVV:</span>
+                            <input type="text" placeholder="123" required>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" value="Efetuar Pagamento" class="submit-btn">
+
+        </form>
+
+    </div>
+
 </body>
+
 </html>

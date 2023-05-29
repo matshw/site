@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+#cabecalho {
+    background-color: #449ca8;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    text-align: center;
+    font-family: 'Arial';
+  }
+
+  body {
+    background-color: #449ca8;
+    /* color: #fff; */
+  }
+  
+  .logo {
+    width: 250px;
+    height: auto;
+    position: relative;
+    object-position: center;
+    top: -70px;
+  }
+  
+  #sobre{
+    width: auto;
+    height: auto;
+    position:absolute;
+    bottom: 20px;
+    right: 120px;
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  #inicio{
+    width: auto;
+    height: auto;
+    position:absolute;
+    bottom: 20px;
+    right: 200px;
+    color:white;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+.telaPagamento{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
+  min-height: 100vh;
+}
+
+.telaPagamento form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+
+.telaPagamento form .linha{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.telaPagamento form .linha .coluna{
+  flex:1 1 250px;
+}
+
+.telaPagamento form .linha .coluna .titulo{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.telaPagamento form .linha .coluna .caixaTexto{
+  margin:15px 0;
+}
+
+.telaPagamento form .linha .coluna .caixaTexto span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.telaPagamento form .linha .coluna .caixaTexto input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.telaPagamento form .linha .coluna .caixaTexto input:focus{
+  border:1px solid #000;
+}
+
+.telaPagamento form .linha .coluna .linhas{
+  display: flex;
+  gap:15px;
+}
+
+.telaPagamento form .linha .coluna .linhas .caixaTexto{
+  margin-top: 5px;
+}
+
+.telaPagamento form .linha .coluna .caixaTexto img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.telaPagamento form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: rgb(80, 132, 163);
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.telaPagamento form .submit-btn:hover{
+  background: #22505e;
+}

@@ -25,7 +25,6 @@ body {
     position: absolute;
     text-align:right;
     justify-content:flex-end;
-    border-bottom: 1px solid #111;
   }
 
 .abrir-menu {
@@ -302,7 +301,7 @@ h1, h2 {
     margin-top:30px;
     padding:20px 30px;
     border-radius:20px;
-    background-color:#48d05f;
+    background-color:rgb(80, 132, 163);
     color:black;
     display:inline-block;
     cursor:pointer;
@@ -310,18 +309,22 @@ h1, h2 {
 }
 
 .camisaInfo-botaoAdicionar:hover {
-    background-color:#32a345;
+    background-color:#22505e;
 }
 
 .camisaInfo-botaoCancelar {
     margin-top:30px;
     padding:20px 30px;
     border-radius:20px;
-    background-color:#48d05f;
+    background-color:rgb(80, 132, 163);
     color:black;
     display:inline-block;
     cursor:pointer;
     margin-right:30px;
+}
+
+.camisaInfo-botaoCancelar:hover {
+    background-color:#22505e;
 }
 
 .camisaInfo-cancelarmobile {
@@ -401,12 +404,12 @@ h1, h2 {
 .menu-finalizar {
     padding:20px 30px;
     border-radius:20px;
-    background-color:#48d05f;
+    background-color:rgb(80, 132, 163);
     color:black;
     cursor:pointer;
     text-align:center;
     margin-top:20px;
-    border:2px solid #63f77c;
+    border:2px solid rgb(80, 132, 163);
     transition: all ease .2s;
     font-family: 'Quicksand';
     font-weight: bolder;
@@ -414,7 +417,7 @@ h1, h2 {
 }
 
 .menu-finalizar:hover {
-    background-color:#35af4a;
+    background-color:#22505e;
 }
 
 @media (max-width:1000px) {
