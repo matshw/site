@@ -168,9 +168,7 @@ const mudarQuantidade = () => {
 
 const adicionarNoCarrinho = () => {
     seleciona('.camisaInfo-botaoAdicionar').addEventListener('click', () => {
-        console.log('Adicionar no carrinho')
 
-        console.log("Camisa " + modalKey)
         let size = seleciona('.camisaInfo-tamanho.selected').getAttribute('data-key')
         if (size == 0) {
             size = "P"
@@ -244,7 +242,6 @@ const atualizarCarrinho = () => {
         for (let i in menu) {
 
             let camisasItem = camisasJson.find((item) => item.id == menu[i].id)
-            console.log(camisasItem)
 
             subtotal += menu[i].price * menu[i].qt
 
@@ -265,7 +262,6 @@ const atualizarCarrinho = () => {
             })
 
             menuItem.querySelector('.tela-compra-diminuir').addEventListener('click', () => {
-                console.log('Clicou no botão menos')
                 if (menu[i].qt > 1) {
                     menu[i].qt--
                 } else {
@@ -296,7 +292,6 @@ const atualizarCarrinho = () => {
 
 const finalizarCompra = () => {
     seleciona('.menu-finalizar').addEventListener('click', () => {
-        console.log('Finalizar compra')
         seleciona('aside').classList.remove('show')
         seleciona('aside').style.left = '100vw'
         seleciona('header').style.display = 'flex'
