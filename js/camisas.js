@@ -68,7 +68,7 @@ let camisasJson = [
         id: 6,
         name: 'Camisa de Jogo Temporada 88 com Patrocínios',
         img: 'images/camisa6 1988.jpg',
-        price: [30.00, 279.00, 319.00, 349.00],
+        price: [259.00, 279.00, 319.00, 349.00],
         sizes: [
           'Infantil',
           'Adulto',
@@ -78,12 +78,11 @@ let camisasJson = [
         description: 'Camisa oficial de jogo da temporada 88, com patrocínio da Coca Cola e feita pela Adidas.'
       }
 ];
-
 // aula 05
 // criar a variável modalKey sera global
 let modalKey = 0
 
-// variavel para controlar a quantidade inicial de pizzas na modal
+// variavel para controlar a quantidade inicial de camisas na modal
 let quantidadeCamisas = 1
 
 let menu = [] // carrinho
@@ -119,7 +118,7 @@ const botoesFechar = () => {
     selecionaTodos('.camisaInfo-botaoCancelar, .camisaInfo-cancelarmobile').forEach( (item) => item.addEventListener('click', fecharModal) )
 }
 
-const preencheDadosDasPizzas = (camisasItem, item, index) => {
+const preencheDadosCamisas = (camisasItem, item, index) => {
     // aula 05
     // setar um atributo para identificar qual elemento foi clicado
 	camisasItem.setAttribute('data-key', index)
@@ -141,13 +140,13 @@ const pegarKey = (e) => {
     // .closest retorna o elemento mais proximo que tem a class que passamos
     // do .camisa-item ele vai pegar o valor do atributo data-key
     let key = e.target.closest('.camisas-item').getAttribute('data-key')
-    console.log('Pizza clicada ' + key)
+    console.log('Camisa clicada ' + key)
     console.log(camisasJson[key])
 
-    // garantir que a quantidade inicial de pizzas é 1
+    // garantir que a quantidade inicial de camisas é 1
     quantidadeCamisas = 1
 
-    // Para manter a informação de qual pizza foi clicada
+    // Para manter a informação de qual camisa foi clicada
     modalKey = key
 
     return key
@@ -204,10 +203,20 @@ const adicionarNoCarrinho = () => {
         console.log('Adicionar no carrinho')
 
         // pegar dados da janela modal atual
-    	// qual pizza? pegue o modalKey para usar camisasJson[modalKey]
-    	console.log("Pizza " + modalKey)
+    	// qual camisa? pegue o modalKey para usar camisasJson[modalKey]
+    	console.log("Camisa " + modalKey)
     	// tamanho
 	    let size = seleciona('.camisaInfo-tamanho.selected').getAttribute('data-key')
+        if(size==0) {
+            size = "P"
+        } else if(size==1) {
+            size = "M"
+        } else if(size==2) {
+            size = "G"
+        } else if(size==3) {
+            size = "GG"
+        }
+
 	    console.log("Tamanho " + size)
 	    // quantidade
     	console.log("Quant. " + quantidadeCamisas)
@@ -227,17 +236,17 @@ const adicionarNoCarrinho = () => {
             // se encontrar aumente a quantidade
             menu[key].qt += quantidadeCamisas
         } else {
-            // adicionar objeto pizza no carrinho
-            let pizza = {
+            // adicionar objeto camisa no carrinho
+            let camisa = {
                 identificador,
                 id: camisasJson[modalKey].id,
                 size, // size: size
                 qt: quantidadeCamisas,
                 price: parseFloat(price) // price: price
             }
-            menu.push(pizza)
-            console.log(pizza)
-            console.log('Sub total R$ ' + (pizza.qt * pizza.price).toFixed(2))
+            menu.push(camisa)
+            console.log(camisa)
+            console.log('Sub total R$ ' + (camisa.qt * camisa.price).toFixed(2))
         }
 
         fecharModal()
@@ -303,13 +312,13 @@ const atualizarCarrinho = () => {
 			let menuItem = seleciona('.camisas .tela-compra').cloneNode(true)
 			seleciona('.menu').append(menuItem)
 
-			let pizzaSizeName = menu[i].size
+			let camisaTamanhoNome = menu[i].size
 
-			let pizzaName = `${camisasItem.name} (${pizzaSizeName})`
+			let camisaNome = `${camisasItem.name} (${camisaTamanhoNome})`
 
 			// preencher as informacoes
 			menuItem.querySelector('img').src = camisasItem.img
-			menuItem.querySelector('.tela-compra-nome').innerHTML = pizzaName
+			menuItem.querySelector('.tela-compra-nome').innerHTML = camisaNome
 			menuItem.querySelector('.tela-compra-quantidade').innerHTML = menu[i].qt
 
 			// selecionar botoes + e -
@@ -371,7 +380,7 @@ const finalizarCompra = () => {
 
 // /aula 06
 
-// MAPEAR camisasJson para gerar lista de pizzas
+// MAPEAR camisasJson para gerar lista de camisas
 camisasJson.map((item, index ) => {
     //console.log(item)
     let camisasItem = document.querySelector('.camisas .camisas-item').cloneNode(true)
@@ -379,13 +388,13 @@ camisasJson.map((item, index ) => {
     //document.querySelector('.camisas-area').append(camisasItem)
     seleciona('.camisas-area').append(camisasItem)
 
-    // preencher os dados de cada pizza
-    preencheDadosDasPizzas(camisasItem, item, index)
+    // preencher os dados de cada camisa
+    preencheDadosCamisas(camisasItem, item, index)
     
-    // pizza clicada
+    // camisa clicada
     camisasItem.querySelector('.camisas-item a').addEventListener('click', (e) => {
         e.preventDefault()
-        console.log('Clicou na pizza')
+        console.log('Clicou na camisa')
 
         // aula 05
         let chave = pegarKey(e)
@@ -412,7 +421,7 @@ camisasJson.map((item, index ) => {
 
     botoesFechar()
 
-}) // fim do MAPEAR camisasJson para gerar lista de pizzas
+}) // fim do MAPEAR camisasJson para gerar lista de camisas
 
 // aula 05
 // mudar quantidade com os botoes + e -

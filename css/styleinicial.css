@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,7 +7,7 @@
 
 body {
     background-color:#EEE;
-    font-family:'Lato', Helvetica, Arial;
+    font-family:'Quicksand', Helvetica, Arial;
     font-size:15px;
     display:flex;
     margin:0;
@@ -17,31 +18,35 @@ body {
     display:none;
 }
 
-header {
-    position: fixed;
-    left:0;
-    top:0;
-    right:0;
-    height:60px;
-    background-color:#d32f2f;
-    display:flex; /* none; */
-    justify-content:space-between; /* flex-end; */
-    align-items: center;
-}
-
-header h1 {
-    margin-left: 1rem;
-    color: #fff;
-}
+#cabecalho {
+    background-color: #449ca8;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    text-align:right;
+    justify-content:flex-end;
+    border-bottom: 1px solid #111;
+  }
 
 .abrir-menu {
-    margin-right: 15px;
+    width: 71px;
+    height: auto;
+    margin-top: -55px;
+    margin-left: 95%;
     font-size: 26px;
-    background-color: #ef9a9a;
-    padding: 5px 20px;
+    background-color: #9ad1ef;
+    padding: 1px 5px;
     border-radius: 5px;
     cursor: pointer;
 }
+
+#imginicial{
+    right: 750px;
+    width: auto;
+    height: auto;
+    position: relative;
+    object-position: center;
+  }
 
 .abrir-menu span {
     margin-right:10px;
@@ -55,9 +60,9 @@ header h1 {
 }
 
 aside {
-    background-color:#ffcdd2;
+    background-color:#9ad1ef;
     width:0vw;
-    font-family:'Hepta Slab', Helvetica, Arial;
+    font-family:'Quicksand';
     transition:all ease .2s;
     overflow-x:hidden;
 }
@@ -77,9 +82,11 @@ main {
 }
 
 h1, h2 {
-    font-family:'Hepta Slab', Helvetica, Arial;
+    font-family:'Quicksand';
     text-align: center;
     color: #000;
+    font-weight: 900;
+    margin-bottom: 30px;
 }
 
 .camisas-area {
@@ -90,7 +97,7 @@ h1, h2 {
 .camisas-item {
     text-align: center;
     max-width:250px;
-    font-family:'Hepta Slab', Helvetica, Arial;
+    font-family:'Quicksand';
     margin:0 auto 50px auto;
 }
 
@@ -119,7 +126,7 @@ h1, h2 {
     height:50px;
     line-height:50px;
     border-radius:25px;
-    background-color:#d32f2f;
+    background-color:rgb(80, 132, 163);
     text-align:center;
     color:#FFF;
     font-size:22px;
@@ -129,7 +136,7 @@ h1, h2 {
 }
 
 .camisas-item a:hover .camisas-item-add {
-    background-color:#b71c1c;
+    background-color:#22505e;
 }
 
 .camisas-item-preco {
@@ -195,7 +202,7 @@ h1, h2 {
 
 .camisaInfo {
     flex:1;
-    font-family:'Hepta Slab', Helvetica, Arial;
+    font-family:'Quicksand';
     padding-bottom:50px;
 }
 
@@ -241,7 +248,7 @@ h1, h2 {
 }
 
 .camisaInfo-tamanho.selected {
-    background-color:#d32f2f;
+    background-color:#363636;
     color:#FFF;
 }
 
@@ -296,7 +303,7 @@ h1, h2 {
     padding:20px 30px;
     border-radius:20px;
     background-color:#48d05f;
-    color:#FFF;
+    color:black;
     display:inline-block;
     cursor:pointer;
     margin-right:30px;
@@ -311,7 +318,7 @@ h1, h2 {
     padding:20px 30px;
     border-radius:20px;
     background-color:#48d05f;
-    color:#FFF;
+    color:black;
     display:inline-block;
     cursor:pointer;
     margin-right:30px;
@@ -343,6 +350,7 @@ h1, h2 {
 
 .tela-compra-nome {
     flex:1;
+    color: #000;
 }
 
 .tela-compra-qtarea {
@@ -372,11 +380,12 @@ h1, h2 {
 
 .menu-itens {
     padding:15px 0;
-    border-top:1px solid #d32f2f;
+    border-top:1px solid black;
     color:#315970;
     display:flex;
     justify-content: space-between;
     font-size:15px;
+    color: #000;
 }
 
 .menu-itens span:first-child {
@@ -393,12 +402,15 @@ h1, h2 {
     padding:20px 30px;
     border-radius:20px;
     background-color:#48d05f;
-    color:#000000;
+    color:black;
     cursor:pointer;
     text-align:center;
     margin-top:20px;
     border:2px solid #63f77c;
     transition: all ease .2s;
+    font-family: 'Quicksand';
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .menu-finalizar:hover {

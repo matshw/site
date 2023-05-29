@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/png" href="escudo.png" />
+    <link rel="icon" type="image/png" href="images/escudo.png" />
     <script src="js/camisas.js" defer></script>
     <link rel="stylesheet" href="css/styleinicial.css">
     <title>RetroVasco</title>
@@ -41,11 +41,17 @@
         </div>
 
     </div>
-
-    <header>
-        <h1>RetroVasco</h1>
+<header>
+        <div id="cabecalho">
+        <a href="paginainicial.html"><img src="images/terceiraimg1.png" id="imginicial"></a>
+        <a href="paginainicial.html" id="inicio">Início</a>
+        <a href="index.html" id="sobre">Sobre</a>
         <div class="abrir-menu"><span>0</span>🛒</div>
-    </header>
+        
+    </div>
+    
+    
+</header>
 
     <main>
 
@@ -72,7 +78,7 @@
                     <span>Total</span>
                     <span>R$ --</span>
                 </div>
-                <div class="menu-finalizar">Finalizar a compra</div>
+                <div class="menu-finalizar" onclick="(window.location='pagamento.html')">Finalizar a compra</div>
             </div>
         </div>
     </aside>
